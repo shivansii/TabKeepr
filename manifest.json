@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Reclicks",
+    "description": "Records web shortcuts for you <3",
+    "version":"1.0",
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": {
+            "16": "/image/logo16.png",
+            "48": "/image/logo48.png",
+            "128": "/image/logo128.png"
+        }},
+    "icons":
+      {
+        "16": "/image/logo16.png",
+        "48": "/image/logo48.png",
+        "128": "/image/logo128.png"
+      },
+    "permissions":["activeTab", "storage"],
+    "content_scripts":[
+      {
+        "matches":["<all_urls>"],
+        "js":["click_tracker.js"]
+      }
+    ],
+    "background":{ 
+      "service_worker":"./backgroundPage.js"
+    }
+
+
+}
