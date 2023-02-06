@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Reclicks",
-    "description": "Records web shortcuts for you <3",
+    "name": "tabKeepr",
+    "description": "Saves and organizes tabs for you <3",
     "version":"1.0",
     "action": {
         "default_popup": "./popup.html",
@@ -26,6 +26,4 @@
     "background":{ 
       "service_worker":"./backgroundPage.js"
     }
-
-
 }
